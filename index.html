@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bitmates - Mini Game</title>
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/playerbitmates/bitmates-mini-game/main/assets/img/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <script src="assets/js/phaser.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/phaser@v3.80.1/dist/phaser.min.js"></script> -->
+    <script type="module" src="assets/js/menuScene.js"></script>
+    <script type="module" src="assets/js/gameScene.js"></script>
+    <script type="module" src="assets/js/game.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Coloca o conteúdo em colunas (verticalmente) */
+            justify-content: center;
+            align-items: center;
+            margin-top: -60px;
+            background: url(https://raw.githubusercontent.com/playerbitmates/bitmates-mini-game/main/assets/img/bgPage.png) center center / contain;
+            background-attachment: fixed;
+            background-size: 550px 200px;
+            image-rendering: pixelated;
+        }
+        #gameTitle {
+            margin-top: -40px;
+            font-size: 30px;
+            font-family: 'Press Start 2P', sans-serif;
+        }
+        #description {
+            margin-top: -30px;
+            font-size: 10px;
+            font-family: "Rock Salt", cursive;
+        }
+
+        .zoom-effect {
+        transition: transform 0.3s ease;
+        }
+        .zoom-effect:hover {
+        transform: scale(1.1); 
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <a href="https://bitmates.io/" target="blank" class="image-link">
+        <img src="https://raw.githubusercontent.com/playerbitmates/bitmates-mini-game/main/assets/img/icon.png" alt="Logo" class="zoom-effect">
+      </a>
+    <p id="gameTitle">Zombie Atack</p>
+    <p id="description">With ❤️ for the community.</p>
+</body>
+</html>
